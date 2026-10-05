@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Untuk Alma ♡</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Georgia, serif;
+      background: linear-gradient(135deg, #ffd6e7, #ffeaf3, #fbc4da);
+      color: #6b304b;
+      overflow-x: hidden;
+    }
+
+    .page {
+      min-height: 100vh;
+      padding: 35px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .decor {
+      position: absolute;
+      font-size: 28px;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .d1 { top: 8%; left: 8%; }
+    .d2 { top: 15%; right: 10%; animation-delay: 1s; }
+    .d3 { bottom: 12%; left: 12%; animation-delay: 2s; }
+    .d4 { bottom: 18%; right: 8%; animation-delay: 1.5s; }
+
+    .card {
+      width: 100%;
+      max-width: 430px;
+      padding: 35px 25px;
+      text-align: center;
+      background: rgba(255,255,255,0.65);
+      border: 2px solid rgba(255,255,255,0.8);
+      border-radius: 30px;
+      box-shadow: 0 15px 40px rgba(150, 70, 100, 0.18);
+      position: relative;
+      z-index: 2;
+    }
+
+    .small {
+      font-size: 15px;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 15px 0 10px;
+      color: #b33f70;
+    }
+
+    h2 {
+      font-size: 21px;
+      font-weight: normal;
+      margin-bottom: 25px;
+    }
+
+    .photo {
+      width: 220px;
+      height: 280px;
+      object-fit: cover;
+      border: 10px solid white;
+      box-shadow: 5px 8px 20px rgba(100, 40, 70, 0.2);
+      transform: rotate(-3deg);
+      margin: 15px auto 30px;
+      display: block;
+    }
+
+    .message {
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+
+    button {
+      border: none;
+      padding: 13px 24px;
+      border-radius: 30px;
+      background: #d95d91;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(180, 60, 110, 0.25);
+    }
+
+    button:hover {
+      transform: scale(1.04);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .surprise {
+      margin-top: 25px;
+      padding: 20px;
+      background: rgba(255, 220, 235, 0.7);
+      border-radius: 20px;
+      line-height: 1.7;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-12px) rotate(8deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <div class="decor d1">🌸</div>
+    <div class="decor d2">🎀</div>
+    <div class="decor d3">🦋</div>
+    <div class="decor d4">✨</div>
+
+    <div class="card">
+
+      <div class="small">A little something for</div>
+
+      <h1>Alma ♡</h1>
+
+      <h2>Happy Birthday, sayangku.</h2>
+
+      <img src="1.jpg" class="photo" alt="Alma">
+
+      <div class="message">
+        Selamat ulang tahun, cintaku. 🤍
+        <br><br>
+        Semoga di umur yang baru ini, semakin banyak hal baik yang datang
+        ke hidup kamu.
+      </div>
+
+      <button onclick="showMessage()">
+        Ada satu pesan lagi ♡
+      </button>
+
+      <div id="surprise" class="surprise hidden">
+
+        <strong>Untuk istriku, Alma ♡</strong>
+
+        <br><br>
+
+        Semoga kamu selalu sehat, bahagia, dan dikelilingi
+        orang-orang yang tulus.
+
+        <br><br>
+
+        Semoga semua yang kamu impikan perlahan menjadi nyata.
+
+        <br><br>
+
+        Jangan lupa bahagia yaa, sayangku.
+
+        <br><br>
+
+        <strong>I love you, Alma. 🤍</strong>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("surprise").classList.remove("hidden");
+    }
+  </script>
+
+</body>
+</html>
