@@ -2,78 +2,301 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Happy Birthday Alma ♡</title>
 
 <style>
+*{box-sizing:border-box}
 body{
-  margin:0;
-  background:#ffc4dc;
-  color:#6b2945;
-  font-family:Arial,sans-serif;
-  text-align:center;
-}
-
-.box{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:25px;
-}
-
+margin:0;background:linear-gradient(135deg,#ffc1dc,#ffe3ef,#f9b5d2);
+font-family:Arial,sans-serif;color:#74334f;text-align:center;
+overflow-x:hidden}
+section{
+min-height:100vh;padding:60px 20px;
+display:flex;align-items:center;justify-content:center}
 .card{
-  background:#fff5fa;
-  padding:35px 25px;
-  border-radius:25px;
-  max-width:500px;
-  box-shadow:0 10px 30px #c77b9a66;
+max-width:650px;width:100%;padding:35px 22px;
+background:#fff5faeF;border:3px solid #fff;
+border-radius:30px;box-shadow:0 15px 40px #a84d7460;
+position:relative}
+h1{font-size:42px;margin:15px 0;color:#d94f82}
+h2{font-size:30px;color:#d94f82}
+p{font-size:17px;line-height:1.8}
+.decor{font-size:32px;animation:float 3s ease-in-out infinite}
+@keyframes float{
+50%{transform:translateY(-12px) rotate(5deg)}
 }
-
-h1{
-  font-size:36px;
-}
-
-p{
-  font-size:18px;
-  line-height:1.7;
-}
-
+.photo{
+width:85%;max-width:330px;padding:10px;background:white;
+border-radius:5px;box-shadow:4px 8px 20px #74334f55;
+transform:rotate(-2deg);margin:20px auto}
+.btn{
+display:inline-block;margin:20px 5px;padding:14px 25px;
+border:0;border-radius:30px;background:#ed6f9f;color:white;
+font-size:17px;box-shadow:0 6px 15px #c64e7c55}
 .heart{
-  font-size:40px;
-}.photo{
-    width:85%;
-      max-width:320px;
-        border-radius:18px;
-          margin:20px auto;
-            display:block;
-              box-shadow:0 8px 20px #c77b9a66;
-              }
+position:fixed;bottom:-30px;font-size:24px;
+animation:rise 7s linear infinite;opacity:.7}
+@keyframes rise{
+to{transform:translateY(-110vh) rotate(360deg);opacity:0}
+}
+.gallery{
+display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:25px}
+.pic{
+background:white;padding:8px;box-shadow:3px 5px 15px #74334f44;
+transform:rotate(2deg);transition:.3s}
+.pic:nth-child(even){transform:rotate(-3deg)}
+.pic:hover{transform:scale(1.04) rotate(0)}
+.pic img{width:100%;display:block}
+.letter{text-align:left}
+.wish{
+background:#ffe0ec;padding:15px;border-radius:18px;margin:12px 0}
+@media(max-width:500px){
+h1{font-size:32px}.gallery{grid-template-columns:1fr}
 }
 </style>
 </head>
 
 <body>
 
-<div class="box">
-  <div class="card">
-    <div class="heart">🎀 ♡ 🌸 ♡ 🎀</div>
+<div class="heart" style="left:10%">♡</div>
+<div class="heart" style="left:35%;animation-delay:2s">♥</div>
+<div class="heart" style="left:65%;animation-delay:4s">♡</div>
+<div class="heart" style="left:85%;animation-delay:1s">♥</div>
 
-    <h1>HAPPY BIRTHDAY ALMA ♡</h1>
-
-    <p>08 • 10 • 2026</p>
+<section>
+<div class="card">
+<div class="decor">🎀 🌸 🦋 ✨ 🌸 🎀</div>
+<h1>HAPPY BIRTHDAY ALMA ♡</h1>
+<p><b>08 • 10 • 2026</b></p>
 <img src="1.jpg" class="photo">
+<p><b>TODAY IS ALL ABOUT YOU, SAYANGKU 🤍</b></p>
+<p>Hari ini adalah hari kamu. Jadi semoga hari ini dipenuhi banyak hal kecil yang bisa bikin kamu senyum. ♡</p>
+<a href="#letter"><button class="btn">LANJUT ♡</button></a>
+</div>
+</section>
+
+<section id="letter">
+<div class="card letter">
+<div class="decor">💌 🎀 💗</div>
+<h2>Untuk Cintaku, Alma</h2>
+
+<p>Sayangku,</p>
+
+<p>Selamat ulang tahun yaa, cintaku yang cantiiik bangeeet. 🤍</p>
 
 <p>
-  Hari ini adalah hari kamu, Sayangkuu. 🤍
-  </p>
-    <p>
-      TODAY IS ALL ABOUT YOU, SAYANGKU 🤍
-    </p>
+Hari ini adalah hari kamu, jadi aku berharap hari ini dipenuhi banyak
+hal kecil yang bisa bikin kamu senyum.
+</p>
 
-    <div class="heart">🦋 💕 🦋</div>
-  </div>
+<p>
+Di umur yang baru ini, semoga kamu makin banyak menemukan hal-hal
+yang bikin kamu bahagia. Semoga semua yang sedang kamu usahakan
+berjalan dengan baik, dan semoga hal-hal yang kamu doakan perlahan
+menemukan jalannya.
+</p>
+
+<p>
+Semoga kamu selalu dikelilingi orang-orang yang tulus, yang bisa
+membuat kamu merasa dihargai, disayangi, dan nyaman menjadi diri sendiri.
+</p>
+
+<p>
+Kalau ada hari yang terasa berat, jangan terlalu keras sama diri kamu
+sendiri yaa. Kamu nggak harus selalu kuat dan nggak harus selalu
+baik-baik saja,ingat adaa akuu tempat kamu cerita,pulang
+</p>
+
+<p>
+Istirahat kalau capek, ketawa kalau bahagia, dan nikmati hal-hal kecil
+yang kamu suka.
+</p>
+
+<p>
+Karena menurutku, kebahagiaan nggak selalu harus datang dari sesuatu
+yang besar. Kadang bisa dari makanan favorit, obrolan random,
+ketawa karena hal nggak jelas, atau sekadar punya seseorang yang
+bikin hari terasa sedikit lebih menyenangkan.
+</p>
+
+<p>
+Dan aku senang bisa mengenal kamu dan berbagi banyak hal kecil
+sama kamu. ♡
+</p>
+
+<p>
+Jadi untuk umur kamu yang baru ini, aku cuma punya banyak doa baik.
+</p>
+
+<div class="wish">🤍 Semoga kamu selalu sehat.</div>
+<div class="wish">🌸 Semoga kamu selalu bahagia.</div>
+<div class="wish">✨ Semoga semua urusan kamu dimudahkan.</div>
+<div class="wish">🎀 Semoga apa yang kamu inginkan perlahan tercapai.</div>
+<div class="wish">🦋 Semoga tahun ini memberikan kamu lebih banyak alasan untuk tersenyum.</div>
+
+<p><b>Selamat ulang tahun, cintaku. 🤍</b></p>
 </div>
+</section>
+
+<section>
+<div class="card">
+<div class="decor">📸 🎀 🌸 🦋</div>
+<h2>Little Memories ♡</h2>
+<p>Beberapa foto untuk mengisi little birthday world ini.</p>
+
+<div class="gallery">
+<div class="pic"><img src="1.jpg"></div>
+<div class="pic"><img src="2.jpg"></div>
+<div class="pic"><img src="3.jpg"></div>
+<div class="pic"><img src="4.jpg"></div>
+<div class="pic"><img src="5.jpg"></div>
+<div class="pic"><img src="6.jpg"></div>
+</div>
+
+<a href="#surprise"><button class="btn">ONE MORE ♡</button></a>
+</div>
+</section>
+
+<section id="surprise">
+<div class="card">
+<div class="decor">🎁 ✨ 🎀 ✨ 🎁</div>
+<h2>One Last Little Surprise ♡</h2>
+
+<p>
+Istriku,yang cantik
+</p>
+
+<p>
+Kalau kamu sudah sampai sini, berarti kamu sudah melihat semuanya.
+hehe. Aku cuma mau bilang, semoga kamu suka dengan little surprise ini.
+Aku memang nggak bisa kasih sesuatu yang terlalu besar, tapi aku pengin
+hari ulang tahun kamu punya sedikit cerita manis yang bisa bikin kamu senyum. ♡
+</p>
+
+<p>
+Di umur yang baru ini, semoga kamu makin banyak menemukan hal-hal
+yang bikin kamu bahagia. Semoga semua yang kamu usahakan berjalan
+dengan baik, semua yang kamu tunggu datang di waktu yang tepat,
+dan semua doa baik yang kamu simpan perlahan menjadi nyata.
+</p>
+
+<p>
+Aku berharap tahun ini jadi tahun yang baik buat kamu.
+Banyak cerita baru, banyak kebahagiaan, banyak tawa, dan tentunya
+banyak momen indah yang bisa kita nikmati bareng. 🤍
+</p>
+
+<p>
+Kalau nanti ada hari yang terasa berat, ingat yaa, kamu nggak harus
+menghadapi semuanya dengan sempurna. Istirahat kalau capek.
+Cerita kalau ingin cerita. Dan jangan lupa kalau ada seseorang
+yang selalu ingin melihat kamu bahagia.
+</p>
+
+<p><b>Jadi hari ini, jangan lupa bahagia yaa, sayangku. 🎀</b></p>
+
+<a href="#ending"><button class="btn">FINAL ♡</button></a>
+</div>
+</section>
+
+<section id="ending">
+<div class="card">
+<div class="decor">🌸 🦋 💗 🦋 🌸</div>
+<h1>Happy Birthday, Istriku ♡</h1>
+<p><b>08 • 10 • 2026</b></p>
+
+<p>
+Semoga umur baru ini membawa kamu lebih dekat dengan semua hal baik
+yang kamu impikan.
+</p>
+
+<p>
+Semoga kamu selalu sehat, selalu dijaga, selalu dimudahkan,
+dan selalu punya alasan untuk tersenyum.
+</p>
+
+<h2>I love you, Alma. 🤍</h2>
+
+<p>made especially for you, Alma. 🎀</p>
+<p>— Rude</p>
+
+<div class="decor">✨ 🎀 ✨ 🦋 ✨</div>
+</div>
+</section>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
