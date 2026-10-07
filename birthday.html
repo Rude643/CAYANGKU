@@ -59,14 +59,22 @@ h1{font-size:32px}.gallery{grid-template-columns:1fr}
 
 <body>
 
-    <audio id="music" src="HBD.mp3" autoplay loop></audio>
-<script>
-    function changeMusic(song){
-      const music = document.getElementById("music");
-        music.src = song;
-          music.play();
-          }
-          </script>
+    <audio id="music" src="HBD.mp3" autoplay></audio>
+ <script>
+    const music = document.getElementById("music");
+    const playlist = ["HBD.mp3","HBD2.mp3","HBD3.mp3","HBD4.mp3"];
+    let currentSong = 0;
+
+    music.addEventListener("ended", function(){
+      currentSong++;
+
+        if(currentSong < playlist.length){
+            music.src = playlist[currentSong];
+                music.play();
+                  }
+                  });
+                  </script>
+ 
     <div class="heart" style="left:10%">♡</div>
 <div class="heart" style="left:10%">♡</div>
 <div class="heart" style="left:35%;animation-delay:2s">♥</div>
@@ -81,7 +89,7 @@ h1{font-size:32px}.gallery{grid-template-columns:1fr}
 <img src="1.jpg" class="photo">
 <p><b>TODAY IS ALL ABOUT YOU, SAYANGKU 🤍</b></p>
 <p>Hari ini adalah hari kamu. Jadi semoga hari ini dipenuhi banyak hal kecil yang bisa bikin kamu senyum. ♡</p>
-<a href="#letter"><button class="btn" onclick="changeMusic('HBD2.mp3')">LANJUT ♡</button></a>
+<a href="#letter"><button class="btn">LANJUT ♡</button></a>
 </div>
 </section>
 
@@ -163,7 +171,7 @@ Jadi untuk umur kamu yang baru ini, aku cuma punya banyak doa baik.
 <div class="pic"><img src="6.jpg"></div>
 </div>
 
-<a href="#surprise"><button class="btn" onclick="changeMusic('HBD3.mp3')">ONE MORE ♡</button></a>
+<a href="#surprise"><button class="btn">ONE MORE ♡</button></a>
 </div>
 </section>
 
@@ -205,7 +213,7 @@ yang selalu ingin melihat kamu bahagia.
 
 <p><b>Jadi hari ini, jangan lupa bahagia yaa, sayangku. 🎀</b></p>
 
-<a href="#ending"><button class="btn" onclick="changeMusic('HBD4.mp3')">FINAL ♡</button></a>
+<a href="#ending"><button class="btn">FINAL ♡</button></a>
 </div>
 </section>
 
